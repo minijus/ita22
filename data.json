@@ -1,0 +1,22 @@
+{
+  "transactions": [{
+    "id": "1",
+    "amount": -100.00,
+    "payee": "McDonalds",
+    "category": "Food",
+    "date": "2022-03-23",
+    "description": "Lunch"
+  }, {
+    "id": "2",
+    "amount": -500.00,
+    "payee": "Bank of Swaziland",
+    "category": "Mortgage",
+    "date": "2022-03-24"
+  }, {
+    "id": "3",
+    "amount": 1000.00,
+    "payee": "Best employer",
+    "category": "Salary",
+    "date": "2022-03-24"
+  }]
+}
