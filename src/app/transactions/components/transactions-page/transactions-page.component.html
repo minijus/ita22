@@ -1,0 +1,19 @@
+<h3>List of transactions:</h3>
+
+<ul>
+  <li *ngFor="let transaction of transactions$ | async">
+    <a [routerLink]="['/transactions', transaction.id]" routerLinkActive="active">
+      {{ transaction.id }} - {{ transaction.amount }}
+    </a>
+    <button type="button">X</button>
+  </li>
+</ul>
+
+<ng-container *ngIf="transactionId$ | async as transactionId; else newTransaction">
+  <h3>Update transaction:</h3>
+  {{ transactionId }}
+</ng-container>
+
+<ng-template #newTransaction>
+  <h3>Add new transaction:</h3>
+</ng-template>

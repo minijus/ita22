@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TransactionsComponent } from './transactions.component';
+import { TransactionsPageComponent } from './components/transactions-page/transactions-page.component';
 
-const routes: Routes = [{ path: '', component: TransactionsComponent }];
+const routes: Routes = [
+  { path: '', component: TransactionsPageComponent },
+  { path: ':id', component: TransactionsPageComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
