@@ -4,14 +4,8 @@ import { CommonModule } from '@angular/common';
 import { TransactionsRoutingModule } from './transactions-routing.module';
 import { TransactionsComponent } from './transactions.component';
 
-
 @NgModule({
-  declarations: [
-    TransactionsComponent
-  ],
-  imports: [
-    CommonModule,
-    TransactionsRoutingModule
-  ]
+  declarations: [TransactionsComponent],
+  imports: [CommonModule, TransactionsRoutingModule],
 })
-export class TransactionsModule { }
+export class TransactionsModule {}
