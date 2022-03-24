@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'transactions', pathMatch: 'full' },
   {
     path: 'transactions',
     loadChildren: () => import('./transactions/transactions.module').then((m) => m.TransactionsModule),
@@ -18,6 +19,7 @@ const routes: Routes = [
     path: 'payees',
     loadChildren: () => import('./payees/payees.module').then((m) => m.PayeesModule),
   },
+  { path: '**', loadChildren: () => import('./not-found/not-found.module').then((m) => m.NotFoundModule) },
 ];
 
 @NgModule({
